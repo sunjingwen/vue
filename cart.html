@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+</head>
+<body>
+    <table id="cart">
+        <tr>
+            <td>商品信息</td>
+            <td>商品金额</td>
+            <td>商品数量</td>
+            <td>总金额</td>
+            <td>编辑</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"><img src="" alt="">黄鹤楼</td>
+            <td>19</td>
+            <td><input type="number" value="1"></td>
+            <td>19</td>
+            <td><a href="">删除</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"><img src="" alt="">加多宝</td>
+            <td>8</td>
+            <td><input type="number" value="5"></td>
+            <td>40</td>
+            <td><a href="">删除</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">全选</td>
+            <td></td>
+            <td></td>
+            <td>总计：59</td>
+            <td><button>结账</button></td>
+        </tr>
+    </table>
+    <script src="vue.min.js"></script>
+    <script>
+        var vm = new Vue({
+            el: "#cart",
+            data:{
+                totalMoney: 0,
+                productList:[]
+            },
+            filters: {
+
+            },
+            mounted: function(){
+
+            },
+            methods: {
+                cartView: function(){
+
+                }
+            }
+        })
+    </script>
+</body>
+</html>
